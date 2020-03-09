@@ -1,7 +1,7 @@
 {
 	"require" : {
-		"chillerlan/php-qrcode" : "~3.2"
+		"chillerlan/php-qrcode" : "~3.2",
+		"ramsey/uuid" : "~3.9"
 	},
-	"name" : "cellar",
-	"support" : {}
+	"name" : "nicholasschlobohm/cellar"
 }
