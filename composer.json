@@ -1,0 +1,7 @@
+{
+	"require" : {
+		"chillerlan/php-qrcode" : "~3.2"
+	},
+	"name" : "cellar",
+	"support" : {}
+}
