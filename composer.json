@@ -1,7 +1,8 @@
 {
 	"require" : {
 		"chillerlan/php-qrcode" : "~3.2",
-		"ramsey/uuid" : "~3.9"
+		"ramsey/uuid" : "~3.9",
+		"twbs/bootstrap" : "~4.4"
 	},
 	"name" : "nicholasschlobohm/cellar"
 }
