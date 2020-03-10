@@ -8,4 +8,9 @@
 <script src="vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"
 	integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
 	crossorigin="anonymous"></script>
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
 </html>
