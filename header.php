@@ -4,7 +4,8 @@
 <title><?= $_CELLAR['page_title'] ?> &#183; cellar</title>
 
 <!-- Bootstrap core CSS -->
-<link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css"
+	rel="stylesheet">
 
 <style>
 body {
@@ -118,3 +119,31 @@ supports ((position: -webkit-sticky ) or (position: sticky )) {
 }
 </style>
 </head>
+<body>
+	<nav
+		class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+		<a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">cellar</a> <input
+			class="form-control form-control-dark w-100" type="text"
+			placeholder="Search" aria-label="Search">
+	</nav>
+
+	<div class="container-fluid">
+		<div class="row">
+			<nav class="col-md-2 d-none d-md-block bg-light sidebar">
+				<div class="sidebar-sticky">
+					<ul class="nav flex-column">
+						<li class="nav-item"><a
+							class="nav-link<?= $_CELLAR['page_title'] == 'home' ? " active" : "" ?>"
+							href="<?= $_CELLAR['page_title'] == 'home' ? "#" : "index.php"?>">home</a></li>
+						<li class="nav-item"><a
+							class="nav-link<?= $_CELLAR['page_title'] == 'racks' ? " active" : "" ?>"
+							href="<?= $_CELLAR['page_title'] == 'racks' ? "#" : "racks.php"?>">racks</a></li>
+						<li class="nav-item"><a
+							class="nav-link<?= $_CELLAR['page_title'] == 'wines' ? " active" : "" ?>"
+							href="<?= $_CELLAR['page_title'] == 'wines' ? "#" : "index.php"?>">wines</a></li>
+						<li class="nav-item"><a
+							class="nav-link<?= $_CELLAR['page_title'] == 'wineries' ? " active" : "" ?>"
+							href="<?= $_CELLAR['page_title'] == 'wineries' ? "#" : "index.php"?>">wineries</a></li>
+					</ul>
+				</div>
+			</nav>
