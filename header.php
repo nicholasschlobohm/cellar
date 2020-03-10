@@ -76,7 +76,7 @@ supports ((position: -webkit-sticky ) or (position: sticky )) {
  * Content
  */
 [role="main"] {
-	padding-top: 133px; /* Space for fixed navbar */
+	padding-top: 60px; /* Space for fixed navbar */
 }
 
 /*
@@ -105,17 +105,6 @@ supports ((position: -webkit-sticky ) or (position: sticky )) {
 .form-control-dark:focus {
 	border-color: transparent;
 	box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
-}
-</style>
-<!-- custom cellar styling -->
-<style>
-.rack {
-	table-layout: fixed !important;
-	width: 40%;
-}
-
-.rack-slot {
-	height: 5vw !important;
 }
 </style>
 </head>
