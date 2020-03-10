@@ -4,7 +4,7 @@
 <title><?= $_CELLAR['page_title'] ?> &#183; cellar</title>
 
 <!-- Bootstrap core CSS -->
-<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
 body {
