@@ -1,4 +1,6 @@
 <?php
+require_once (__DIR__ . DIRECTORY_SEPARATOR . 'logic.php');
+
 header('X-cellar-Version: 0.1a-prealpha');
 $_CELLAR[] = array();
 $_CELLAR['params'] = ! empty($_GET);
