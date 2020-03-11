@@ -56,8 +56,37 @@ if (isset($_RACK)) {
     <?php
     foreach ($_RACK['bottles'] as $_BOTTLE) {
         ?>
-        <span data-toggle="tooltip" data-placement="right"
-	title="<?= $_BOTTLE['wine']['description'] ?>"><?= $_BOTTLE['wine']['year'] ?> <?= $_BOTTLE['wine']['name'] ?> (<?= $_BOTTLE['wine']['winery']['name'] ?>)</a>
+<p>
+	<a href="#" data-toggle="modal"
+		data-target=".bottle-modal-<?= $_BOTTLE['id'] ?>"><?= $_BOTTLE['wine']['year'] . ' ' . $_BOTTLE['wine']['name'] ?></a>
+</p>
+
+<div class="modal fade bottle-modal-<?= $_BOTTLE['id'] ?>" tabindex="-1"
+	role="dialog" aria-labelledby="<?= $_BOTTLE['id'] ?>"
+	aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title" id="myLargeModalLabel"><?= $_BOTTLE['wine']['year'] . ' ' . $_BOTTLE['wine']['name'] ?></h4>
+				<button type="button" class="close" data-dismiss="modal"
+					aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<p>
+					from <a
+						href="wineries.php?id=<?= $_BOTTLE['wine']['winery']['id'] ?>"><?= $_BOTTLE['wine']['winery']['name'] ?></a>
+				</p>
+				<h3>
+					<a href="bottlelabel.php?id=<?= $_BOTTLE['id'] ?>" style="text-decoration: none !important; color: <?= BottleLabel::getColour($_BOTTLE['id']) ?> !important;" target="_blank"><?= BottleLabel::getNumber($_BOTTLE['id'])?></a>
+
+				</h3>
+				<blockquote class="blockquote"><?= $_BOTTLE['wine']['description'] ?></blockquote>
+			</div>
+		</div>
+	</div>
+</div>
         <?php
     }
 } else {
