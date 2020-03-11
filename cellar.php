@@ -1,6 +1,7 @@
 <?php
 header('X-cellar-Version: 0.1a-prealpha');
 $_CELLAR[] = array();
+$_CELLAR['params'] = ! empty($_GET);
 
 const DB_HOST = 'localhost:3306';
 

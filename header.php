@@ -126,7 +126,7 @@ supports ((position: -webkit-sticky ) or (position: sticky )) {
 							href="<?= $_CELLAR['page_title'] == 'home' ? "#" : "index.php"?>">home</a></li>
 						<li class="nav-item"><a
 							class="nav-link<?= $_CELLAR['page_title'] == 'racks' ? " active" : "" ?>"
-							href="<?= $_CELLAR['page_title'] == 'racks' ? "#" : "racks.php"?>">racks</a></li>
+							href="<?= ($_CELLAR['page_title'] == 'racks' && !$_CELLAR['params']) ? "#" : "racks.php"?>">racks</a></li>
 						<li class="nav-item"><a
 							class="nav-link<?= $_CELLAR['page_title'] == 'wines' ? " active" : "" ?>"
 							href="<?= $_CELLAR['page_title'] == 'wines' ? "#" : "index.php"?>">wines</a></li>
