@@ -125,11 +125,17 @@ supports ((position: -webkit-sticky ) or (position: sticky )) {
 							class="nav-link<?= $_CELLAR['page_title'] == 'home' ? " active" : "" ?>"
 							href="<?= $_CELLAR['page_title'] == 'home' ? "#" : "index.php"?>">home</a></li>
 						<li class="nav-item"><a
+							class="nav-link<?= $_CELLAR['page_title'] == 'about' ? " active" : "" ?>"
+							href="<?= ($_CELLAR['page_title'] == 'about' && !$_CELLAR['params']) ? "about.php?more" : "about.php"?>">about</a></li>
+						<li class="nav-item"><a
 							class="nav-link<?= $_CELLAR['page_title'] == 'racks' ? " active" : "" ?>"
 							href="<?= ($_CELLAR['page_title'] == 'racks' && !$_CELLAR['params']) ? "#" : "racks.php"?>">racks</a></li>
 						<li class="nav-item"><a
 							class="nav-link<?= $_CELLAR['page_title'] == 'wines' ? " active" : "" ?>"
 							href="<?= $_CELLAR['page_title'] == 'wines' ? "#" : "index.php"?>">wines</a></li>
+						<li class="nav-item"><a
+							class="nav-link<?= $_CELLAR['page_title'] == 'catalogues' ? " active" : "" ?>"
+							href="<?= ($_CELLAR['page_title'] == 'racks' && !$_CELLAR['params']) ? "#" : "catalogues.php"?>">catalogues</a></li>
 						<li class="nav-item"><a
 							class="nav-link<?= $_CELLAR['page_title'] == 'wineries' ? " active" : "" ?>"
 							href="<?= $_CELLAR['page_title'] == 'wineries' ? "#" : "index.php"?>">wineries</a></li>
