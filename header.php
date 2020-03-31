@@ -131,11 +131,14 @@ supports ((position: -webkit-sticky ) or (position: sticky )) {
 							class="nav-link<?= $_CELLAR['page_title'] == 'about' ? " active" : "" ?>"
 							href="<?= ($_CELLAR['page_title'] == 'about' && !$_CELLAR['params']) ? "about.php?more" : "about.php" ?>">About</a></li>
 						<li class="nav-item"><a
+							class="nav-link<?= $_CELLAR['page_title'] == 'new' ? " active" : "" ?>"
+							href="<?= ($_CELLAR['page_title'] == 'new' && !$_CELLAR['params']) ? "#" : "new.php" ?>">New</a></li>
+						<li class="nav-item"><a
 							class="nav-link<?= $_CELLAR['page_title'] == 'racks' ? " active" : "" ?>"
 							href="<?= ($_CELLAR['page_title'] == 'racks' && !$_CELLAR['params']) ? "#" : "racks.php" ?>">Racks</a></li>
 						<li class="nav-item"><a
 							class="nav-link<?= $_CELLAR['page_title'] == 'wines' ? " active" : "" ?>"
-							href="<?= $_CELLAR['page_title'] == 'wines' ? "#" : "index.php" ?>">Wines</a></li>
+							href="<?= ($_CELLAR['page_title'] == 'wines' && !$_CELLAR['params']) ? "#" : "wines.php" ?>">Wines</a></li>
 						<li class="nav-item"><a
 							class="nav-link<?= $_CELLAR['page_title'] == 'catalogues' ? " active" : "" ?>"
 							href="<?= ($_CELLAR['page_title'] == 'catalogues' && !$_CELLAR['params']) ? "#" : "catalogues.php" ?>">Catalogues</a></li>
