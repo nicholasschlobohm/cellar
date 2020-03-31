@@ -24,6 +24,8 @@ $config_dir = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEP
 $_CELLAR['gmaps_embed_enabled'] = filter_var(@file_get_contents($config_dir . 'GoogleMapsEmbedEnabled'), FILTER_VALIDATE_BOOLEAN);
 $_CELLAR['gmaps_embed_apikey'] = @file_get_contents($config_dir . 'GoogleMapsEmbedApiKey');
 $_CELLAR['gmaps_embed_view'] = @file_get_contents($config_dir . 'GoogleMapsEmbedView');
+
+$_CELLAR['currency_symbol'] = @file_get_contents($config_dir . 'CurrencySymbol');
 unset($config_dir);
 
 function GUID()
