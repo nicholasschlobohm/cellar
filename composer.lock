@@ -4,101 +4,70 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "96c0f613042f3efcb4d7904d06f47b27",
+    "content-hash": "e7bf6caa7956e87c075b8b56a5bf6458",
     "packages": [
         {
-            "name": "chillerlan/php-qrcode",
-            "version": "3.2.1",
+            "name": "components/font-awesome",
+            "version": "5.12.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/chillerlan/php-qrcode.git",
-                "reference": "ef42ef6c81f085ad0292a4ae326bdcdcaceea36f"
+                "url": "https://github.com/components/font-awesome.git",
+                "reference": "f033e952d0e20684443c0466045deae61fd4e733"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chillerlan/php-qrcode/zipball/ef42ef6c81f085ad0292a4ae326bdcdcaceea36f",
-                "reference": "ef42ef6c81f085ad0292a4ae326bdcdcaceea36f",
+                "url": "https://api.github.com/repos/components/font-awesome/zipball/f033e952d0e20684443c0466045deae61fd4e733",
+                "reference": "f033e952d0e20684443c0466045deae61fd4e733",
                 "shasum": ""
             },
-            "require": {
-                "chillerlan/php-settings-container": "^1.2",
-                "ext-gd": "*",
-                "ext-json": "*",
-                "ext-mbstring": "*",
-                "php": "^7.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^8.5"
-            },
-            "suggest": {
-                "chillerlan/php-authenticator": "Yet another Google authenticator! Also creates URIs for mobile apps."
-            },
-            "type": "library",
+            "type": "component",
             "extra": {
-                "branch-alias": {
-                    "dev-v2.0.x-php5": "1.0.8-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "chillerlan\\QRCode\\": "src/"
+                "component": {
+                    "styles": [
+                        "css/all.css"
+                    ],
+                    "files": [
+                        "css/all.min.css",
+                        "webfonts/*"
+                    ]
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "MIT"
+                "CC-BY-4.0",
+                "MIT",
+                "OFL-1.1"
             ],
-            "authors": [
-                {
-                    "name": "Kazuhiko Arase",
-                    "homepage": "https://github.com/kazuhikoarase"
-                },
-                {
-                    "name": "Smiley",
-                    "email": "smiley@chillerlan.net",
-                    "homepage": "https://github.com/codemasher"
-                },
-                {
-                    "name": "Contributors",
-                    "homepage": "https://github.com/chillerlan/php-qrcode/graphs/contributors"
-                }
-            ],
-            "description": "A QR code generator. PHP 7.2+",
-            "homepage": "https://github.com/chillerlan/php-qrcode",
-            "keywords": [
-                "phpqrcode",
-                "qr",
-                "qr code",
-                "qrcode",
-                "qrcode-generator"
-            ],
-            "time": "2020-02-19T16:56:36+00:00"
+            "description": "Font Awesome, the iconic SVG, font, and CSS framework.",
+            "time": "2020-02-05T15:33:46+00:00"
         },
         {
-            "name": "chillerlan/php-settings-container",
-            "version": "1.2.1",
+            "name": "components/jquery",
+            "version": "3.4.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/chillerlan/php-settings-container.git",
-                "reference": "b9b0431dffd74102ee92348a63b4c33fc8ba639b"
+                "url": "https://github.com/components/jquery.git",
+                "reference": "901828b7968b18319e377dc23d466f28426ee083"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chillerlan/php-settings-container/zipball/b9b0431dffd74102ee92348a63b4c33fc8ba639b",
-                "reference": "b9b0431dffd74102ee92348a63b4c33fc8ba639b",
+                "url": "https://api.github.com/repos/components/jquery/zipball/901828b7968b18319e377dc23d466f28426ee083",
+                "reference": "901828b7968b18319e377dc23d466f28426ee083",
                 "shasum": ""
             },
-            "require": {
-                "ext-json": "*",
-                "php": "^7.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^8.3"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "chillerlan\\Settings\\": "src/"
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "jquery.js"
+                    ],
+                    "files": [
+                        "jquery.min.js",
+                        "jquery.min.map",
+                        "jquery.slim.js",
+                        "jquery.slim.min.js",
+                        "jquery.slim.min.map"
+                    ]
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -107,20 +76,12 @@
             ],
             "authors": [
                 {
-                    "name": "Smiley",
-                    "email": "smiley@chillerlan.net",
-                    "homepage": "https://github.com/codemasher"
+                    "name": "JS Foundation and other contributors"
                 }
             ],
-            "description": "A container class for immutable settings objects. Not a DI container. PHP 7.2+",
-            "homepage": "https://github.com/chillerlan/php-settings-container",
-            "keywords": [
-                "PHP7",
-                "Settings",
-                "container",
-                "helper"
-            ],
-            "time": "2019-09-10T00:09:44+00:00"
+            "description": "jQuery JavaScript Library",
+            "homepage": "http://jquery.com",
+            "time": "2019-10-23T05:15:13+00:00"
         },
         {
             "name": "paragonie/random_compat",
