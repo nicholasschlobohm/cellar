@@ -50,8 +50,12 @@ if (isset($_WINERY)) {
     }
     ?>
     <small><a href="locations.php?id=<?= $_WINERY['location']['id']; ?>">view
-			location in cellar</a></small><br> <br>
-
+			location in cellar</a></small><br> <br> <a
+		href="new.php?n=wine&winery=<?= $_WINERY['id']; ?>"
+		class="btn btn-outline-primary"> <i class="fas fa-plus"></i>&nbsp;&nbsp;&nbsp;New Wine from <?= $_WINERY['name']; ?></a><br>
+	<br> <a href="new.php?n=catalogue&winery=<?= $_WINERY['id']; ?>"
+		class="btn btn-outline-primary"> <i class="fas fa-plus"></i>&nbsp;&nbsp;&nbsp;New Catalogue from <?= $_WINERY['name']; ?></a>
+	
 <?php
 } else {
     $wineries = $_CELLAR['database']->query('SELECT `id`,`name` FROM `winery`;');
