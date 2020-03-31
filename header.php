@@ -7,7 +7,7 @@
 	rel="stylesheet">
 <link href="vendor/select2/select2/dist/css/select2.min.css"
 	rel="stylesheet">
-<link href="vendor/components/font-awesome/css/solid.min.css"
+<link href="vendor/components/font-awesome/css/all.min.css"
 	rel="stylesheet">
 
 <style>
