@@ -11,3 +11,5 @@ $(function () {
 })
 </script>
 </html>
+<?php
+$_CELLAR['database']->close();
