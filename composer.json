@@ -1,6 +1,5 @@
 {
 	"require" : {
-		"ramsey/uuid" : "~3.9",
 		"twbs/bootstrap" : "~4.4",
 		"select2/select2" : "~4.0",
 		"components/font-awesome" : "~5.12",
