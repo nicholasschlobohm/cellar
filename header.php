@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title><?= $_CELLAR['page_title'] ?> &#183; cellar</title>
+<title><?= ucwords($_CELLAR['page_title']); ?> &#183; cellar</title>
 
 <link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css"
 	rel="stylesheet">
