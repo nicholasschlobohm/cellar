@@ -1,5 +1,5 @@
 composer.phar
 /vendor/
 /upload/
-/config/GoogleMapsStaticApiKey
+/config/GoogleMapsEmbedApiKey
 # composer.lock
