@@ -10,7 +10,7 @@ require_once (__DIR__ . DIRECTORY_SEPARATOR . 'header.php');
 		<tbody>
 			<tr>
 				<td><b>Version</b></td>
-				<td><?= CELLAR_VERSION ?></td>
+				<td><?= CELLAR_VERSION; ?></td>
 			</tr>
 			<tr>
 				<td><b>Hostname</b></td>
