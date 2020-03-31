@@ -28,12 +28,12 @@ if (isset($_LOCATION)) {
     ?>
     <p>
 		catalogue from <a
-			href="wineries.php?id=<?= $_LOCATION['winery']['id'] ?>"><?= $_LOCATION['winery']['name'] ?></a>
+			href="wineries.php?id=<?= $_LOCATION['winery']['id']; ?>"><?= $_LOCATION['winery']['name']; ?></a>
 	</p>
 
-	<small><a href="upload/catalogue/<?= $_LOCATION['id'] ?>.pdf"
+	<small><a href="upload/catalogue/<?= $_LOCATION['id']; ?>.pdf"
 		target="_blank">click here for raw file</a></small>
-	<iframe src="upload/catalogue/<?= $_LOCATION['id'] ?>.pdf#toolbar=0"
+	<iframe src="upload/catalogue/<?= $_LOCATION['id']; ?>.pdf#toolbar=0"
 		width="100%" height="750px"></iframe>
 	
     <?php
@@ -47,7 +47,7 @@ if (isset($_LOCATION)) {
 
     foreach ($_WINERIES as $location) {
         ?>
-        <a href="?id=<?= $location['id'] ?>"><?= $location['title'] ?></a>
+        <a href="?id=<?= $location['id']; ?>"><?= $location['title']; ?></a>
 	<br>
         <?php
     }

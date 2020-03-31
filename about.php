@@ -14,22 +14,22 @@ require_once (__DIR__ . DIRECTORY_SEPARATOR . 'header.php');
 			</tr>
 			<tr>
 				<td><b>Hostname</b></td>
-				<td><?= $_SERVER['SERVER_NAME'] ?></td>
+				<td><?= $_SERVER['SERVER_NAME']; ?></td>
 			</tr>
 			<tr>
 				<td><b>Running on</b></td>
-				<td><?= $_SERVER['SERVER_SOFTWARE'] ?></td>
+				<td><?= $_SERVER['SERVER_SOFTWARE']; ?></td>
 			</tr>
 			<?php
 if (isset($_GET['more'])) {
     ?>
 			<tr>
 				<td><b>Server protocol</b></td>
-				<td><?= $_SERVER['SERVER_PROTOCOL'] ?></td>
+				<td><?= $_SERVER['SERVER_PROTOCOL']; ?></td>
 			</tr>
 			<tr>
 				<td><b>Document root</b></td>
-				<td><?= $_SERVER['DOCUMENT_ROOT'] ?></td>
+				<td><?= $_SERVER['DOCUMENT_ROOT']; ?></td>
 			</tr>			
 			<?php
 }

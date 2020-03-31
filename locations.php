@@ -48,7 +48,7 @@ if (isset($_LOCATION)) {
 
     foreach ($_LOCATIONS as $location) {
         ?>
-        <a href="?id=<?= $location['id'] ?>"><?= $location['address'] ?></a>
+        <a href="?id=<?= $location['id']; ?>"><?= $location['address']; ?></a>
 	<br>
         <?php
     }

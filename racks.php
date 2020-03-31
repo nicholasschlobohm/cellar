@@ -51,23 +51,23 @@ if (isset($_RACK)) {
         unset($location);
     }
     ?>
-    <p>Capacity: <?= $_RACK['capacity'] ?> bottles</p>
+    <p>Capacity: <?= $_RACK['capacity']; ?> bottles</p>
 	<h5>Bottles</h5>
     <?php
     foreach ($_RACK['bottles'] as $_BOTTLE) {
         ?>
 <p>
 		<a href="#" data-toggle="modal"
-			data-target=".bottle-modal-<?= $_BOTTLE['id'] ?>"><?= $_BOTTLE['wine']['year'] . ' ' . $_BOTTLE['wine']['name'] ?></a>
+			data-target=".bottle-modal-<?= $_BOTTLE['id']; ?>"><?= $_BOTTLE['wine']['year']; ?> <?= $_BOTTLE['wine']['name']; ?></a>
 	</p>
 
-	<div class="modal fade bottle-modal-<?= $_BOTTLE['id'] ?>"
-		tabindex="-1" role="dialog" aria-labelledby="<?= $_BOTTLE['id'] ?>"
+	<div class="modal fade bottle-modal-<?= $_BOTTLE['id']; ?>"
+		tabindex="-1" role="dialog" aria-labelledby="<?= $_BOTTLE['id']; ?>"
 		aria-hidden="true">
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h4 class="modal-title" id="myLargeModalLabel"><?= $_BOTTLE['wine']['year'] . ' ' . $_BOTTLE['wine']['name'] ?></h4>
+					<h4 class="modal-title" id="myLargeModalLabel"><?= $_BOTTLE['wine']['year']; ?> <?= $_BOTTLE['wine']['name']; ?></h4>
 					<button type="button" class="close" data-dismiss="modal"
 						aria-label="Close">
 						<span aria-hidden="true">&times;</span>
@@ -76,13 +76,13 @@ if (isset($_RACK)) {
 				<div class="modal-body">
 					<p>
 						from <a
-							href="wineries.php?id=<?= $_BOTTLE['wine']['winery']['id'] ?>"><?= $_BOTTLE['wine']['winery']['name'] ?></a>
+							href="wineries.php?id=<?= $_BOTTLE['wine']['winery']['id']; ?>"><?= $_BOTTLE['wine']['winery']['name']; ?></a>
 					</p>
 					<h3>
-						<a href="bottlelabel.php?id=<?= $_BOTTLE['id'] ?>" style="text-decoration: none !important; color: <?= BottleLabel::getColour($_BOTTLE['id']) ?> !important;" target="_blank"><?= BottleLabel::getNumber($_BOTTLE['id'])?></a>
+						<a href="bottlelabel.php?id=<?= $_BOTTLE['id']; ?>" style="text-decoration: none !important; color: <?= BottleLabel::getColour($_BOTTLE['id']); ?> !important;" target="_blank"><?= BottleLabel::getNumber($_BOTTLE['id']); ?></a>
 
 					</h3>
-					<blockquote class="blockquote"><?= $_BOTTLE['wine']['description'] ?></blockquote>
+					<blockquote class="blockquote"><?= $_BOTTLE['wine']['description']; ?></blockquote>
 				</div>
 			</div>
 		</div>
@@ -99,7 +99,7 @@ if (isset($_RACK)) {
 
     foreach ($_RACKS as $rack) {
         ?>
-        <a href="?id=<?= $rack['id'] ?>"><?= $rack['name']?></a> <br>
+        <a href="?id=<?= $rack['id']; ?>"><?= $rack['name']; ?></a> <br>
         <?php
     }
 }
