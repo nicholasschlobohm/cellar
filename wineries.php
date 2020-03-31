@@ -63,12 +63,15 @@ if (isset($_WINERY)) {
 
     foreach ($_WINERIES as $winery) {
         ?>
-        <a href="?id=<?= $winery['id'] ?>"><?= $winery['name'] ?></a> <br>
+        <a href="?id=<?= $winery['id']; ?>"><?= $winery['name']; ?></a>
+	<br>
         <?php
     }
 }
 
 ?>
+
+
 
 </main>
 <?php
