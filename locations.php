@@ -39,14 +39,14 @@ if (isset($_LOCATION)) {
     ?>
 <?php
 } else {
-    $wineries = $_CELLAR['database']->query('SELECT `id`,`address` FROM `location`;');
-    $_WINERIES = array();
-    while ($row = mysqli_fetch_assoc($wineries)) {
-        $_WINERIES[] = $row;
+    $locations = $_CELLAR['database']->query('SELECT `id`,`address` FROM `location`;');
+    $_LOCATIONS = array();
+    while ($row = mysqli_fetch_assoc($locations)) {
+        $_LOCATIONS[] = $row;
     }
-    unset($wineries);
+    unset($locations);
 
-    foreach ($_WINERIES as $location) {
+    foreach ($_LOCATIONS as $location) {
         ?>
         <a href="?id=<?= $location['id'] ?>"><?= $location['address'] ?></a>
 	<br>
