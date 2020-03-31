@@ -126,22 +126,22 @@ supports ((position: -webkit-sticky ) or (position: sticky )) {
 					<ul class="nav flex-column">
 						<li class="nav-item"><a
 							class="nav-link<?= $_CELLAR['page_title'] == 'home' ? " active" : "" ?>"
-							href="<?= $_CELLAR['page_title'] == 'home' ? "#" : "index.php"?>">home</a></li>
+							href="<?= $_CELLAR['page_title'] == 'home' ? "#" : "index.php" ?>">Home</a></li>
 						<li class="nav-item"><a
 							class="nav-link<?= $_CELLAR['page_title'] == 'about' ? " active" : "" ?>"
-							href="<?= ($_CELLAR['page_title'] == 'about' && !$_CELLAR['params']) ? "about.php?more" : "about.php"?>">about</a></li>
+							href="<?= ($_CELLAR['page_title'] == 'about' && !$_CELLAR['params']) ? "about.php?more" : "about.php" ?>">About</a></li>
 						<li class="nav-item"><a
 							class="nav-link<?= $_CELLAR['page_title'] == 'racks' ? " active" : "" ?>"
-							href="<?= ($_CELLAR['page_title'] == 'racks' && !$_CELLAR['params']) ? "#" : "racks.php"?>">racks</a></li>
+							href="<?= ($_CELLAR['page_title'] == 'racks' && !$_CELLAR['params']) ? "#" : "racks.php" ?>">Racks</a></li>
 						<li class="nav-item"><a
 							class="nav-link<?= $_CELLAR['page_title'] == 'wines' ? " active" : "" ?>"
-							href="<?= $_CELLAR['page_title'] == 'wines' ? "#" : "index.php"?>">wines</a></li>
+							href="<?= $_CELLAR['page_title'] == 'wines' ? "#" : "index.php" ?>">Wines</a></li>
 						<li class="nav-item"><a
 							class="nav-link<?= $_CELLAR['page_title'] == 'catalogues' ? " active" : "" ?>"
-							href="<?= ($_CELLAR['page_title'] == 'racks' && !$_CELLAR['params']) ? "#" : "catalogues.php"?>">catalogues</a></li>
+							href="<?= ($_CELLAR['page_title'] == 'catalogues' && !$_CELLAR['params']) ? "#" : "catalogues.php" ?>">Catalogues</a></li>
 						<li class="nav-item"><a
 							class="nav-link<?= $_CELLAR['page_title'] == 'wineries' ? " active" : "" ?>"
-							href="<?= $_CELLAR['page_title'] == 'wineries' ? "#" : "index.php"?>">wineries</a></li>
+							href="<?= ($_CELLAR['page_title'] == 'wineries' && !$_CELLAR['params']) ? "#" : "wineries.php" ?>">Wineries</a></li>
 					</ul>
 				</div>
 			</nav>
