@@ -7,4 +7,4 @@ To begin using, run:
 If you change a config file for your dev environment, run:
 ``git update-index --assume-unchanged <file>``
 
-eg. `./config/GoogleMapsStaticApiKey`
+eg. `./config/GoogleMapsEmbedApiKey`
