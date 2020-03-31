@@ -3,8 +3,11 @@
 <head>
 <title><?= $_CELLAR['page_title'] ?> &#183; cellar</title>
 
-<!-- Bootstrap core CSS -->
 <link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<link href="vendor/select2/select2/dist/css/select2.min.css"
+	rel="stylesheet">
+<link href="vendor/components/font-awesome/css/solid.min.css"
 	rel="stylesheet">
 
 <style>
