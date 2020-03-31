@@ -1,5 +1,9 @@
 #!/bin/bash
 
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+cd ${DIR}
+
 echo "cellar Setup Assistant"
 echo "----------------------"
 echo ""
@@ -10,8 +14,8 @@ MariaDbUsername=${MariaDbUsername:-root}
 read -sp "MariaDB password [<blank>]: " MariaDbPassword
 echo ""
 
-read -p "cellar.sql location [./cellar.sql]: " dbfile
-dbfile=${dbfile:-./cellar.sql}
+read -p "cellar.sql location [${DIR}/cellar.sql]: " dbfile
+dbfile=${dbfile:-${DIR}/cellar.sql}
 
 read -p "Enable Google Maps Embed [false]: " GoogleMapsEmbedEnabled
 GoogleMapsEmbedEnabled=${GoogleMapsEmbedEnabled:-false}
@@ -32,13 +36,15 @@ if [ -f /root/.my.cnf ]; then
 	
 # If /root/.my.cnf doesn't exist then it'll ask for root password   
 else
-    mysql -u${MariaDbUsername} -p${MariaDbPassword} -e "CREATE DATABASE `cellar`;"
+	mysql -u${MariaDbUsername} -p${MariaDbPassword} -e "CREATE DATABASE cellar;"
 	mysql -u${MariaDbUsername} -p${MariaDbPassword} -D cellar < ${dbfile}
 fi
 
 # SETUP CONFKEYS
 # -----------
-echo ${GoogleMapsEmbedEnabled} > ./config/GoogleMapsEmbedEnabled
-echo ${GoogleMapsEmbedApiKey} > ./config/GoogleMapsEmbedApiKey
+echo ${GoogleMapsEmbedEnabled} > ${DIR}/config/GoogleMapsEmbedEnabled
+echo ${GoogleMapsEmbedApiKey} > ${DIR}/config/GoogleMapsEmbedApiKey
+
+composer install
 
 echo
