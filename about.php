@@ -4,7 +4,7 @@ $_CELLAR['page_title'] = 'about';
 require_once (__DIR__ . DIRECTORY_SEPARATOR . 'header.php');
 ?>
 <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-	<h2>about</h2>
+	<h2>About</h2>
 	<br>
 	<table class="table table-striped">
 		<tbody>

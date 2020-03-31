@@ -13,7 +13,7 @@ if (isset($_GET['id'])) {
 }
 ?>
 <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-	<h2>racks</h2>
+	<h2>Racks</h2>
 <?php
 
 if (isset($_RACK)) {
